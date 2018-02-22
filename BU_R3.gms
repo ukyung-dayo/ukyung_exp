@@ -5,14 +5,14 @@
 ****************************************************************************************************************************************
 $onempty
 SETS
-*        T       time periods    / 0*20/
+        T       time periods    / 0*20/
         TO(t) /0/
         BU_R load regions / 1 "N", 2 "P", 3 "D" /
         BU_I technologies / 1 "Coal", 2 "HCoal", 3 "LNG", 4 "Oil", 5 "Uranium", 6 "Nuclear_PP", 7 "Steam_P_LNG", 8 "Steam_P_oil", 9 "Steam_P_coal", 10 "Steam_P_Hcoal", 11 "CC_oil", 12 "CC_LNG", 13 "Combu_oil", 14 "CHP_LNG", 17 "Hydro_Dam", 18 "Hydro_river", 19 "Renew_Solar", 20 "Renew_Wind", 21 "Renew_Inci", 22 "Renew_LFG", 24 "Renew_biopower", 25 "Renew_Busaeng", 26 "Renew_Sea", 28 "Pumping", 29 "ESS", 30 "Elec_TD"/
         BU_I_E(BU_I)      /1, 2, 3, 4, 5/
         BU_I_E_uranium(BU_I) energy technology  except uranium / 1, 2, 3, 4/
         BU_I_0(BU_I) technologies with cap. / 6, 7, 8, 9, 10, 11, 12, 13, 14, 17, 18, 19, 20, 21, 22, 24, 25, 26, 28, 29/
-*        BU_I_no(BU_I) technologies with no new cap. / 7, 8, 9, 11, 13, 17, 18, 21, 22, 24, 26 /
+        BU_I_no(BU_I) technologies with no new cap. / 7, 8, 9, 11, 13, 17, 18, 21, 22, 24, 26 /
         BU_I_no(BU_I) technologies with no new cap. / 7, 8, 9, 11, 13, 24 / ! 7차전력수급계획  / 7, 8, 9, 11, 13, 24 /
 
         BU_I_new(BU_I) regeneration technology / 17, 18, 19, 20, 21, 22, 24, 25, 26, 28, 29/
