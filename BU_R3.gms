@@ -387,7 +387,7 @@ SETS operation_LB_Set(BU_I,BU_R) /17.1,17.2,17.3, 18.1,18.2,18.3, 28.2, 28.3/,
      pf_UB_Set(BU_I,BU_R) /17.1,17.2,17.3, 18.1,18.2,18.3/;
 PARAMETER    param_LB(BU_I,BU_R) /17.1 0.8,17.2 0.8,17.3 0.8, 18.1 0.8,18.2 0.8,18.3 0.8, 28.2 0.8, 28.3 0.2/,
       param_UB(BU_I,BU_R) /17.1 1.2,17.2 1.2,17.3 1.2, 18.1 1.2,18.2 1.2,18.3 1.2/;
-
+$ontext
 LOOP(BU_I,
   LOOP(BU_R$pf_LB_Set(BU_I,BU_R),
      LOOP(t$((t.val)=0),
@@ -402,7 +402,7 @@ LOOP(BU_I,
      );
   );
 );
-
+$offtext
 
 VARIABLES
    BU_x(BU_I,t)
